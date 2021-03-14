@@ -8,13 +8,15 @@ def index(request):
     return render(request,'index.html')
 def about(request):
     return render(request,'about.html')
+    
 def removepunc(request):
-    removepunc=request.GET.get('removepunc','off')
-    fullcaps=request.GET.get('fullcaps','off')
-    newlineremover=request.GET.get('newlineremover','off')
-    extraspaceremover=request.GET.get('extraspaceremover','off')
+    djtext=request.POST.get('text','default')
+    removepunc=request.POST.get('removepunc','off')
+    fullcaps=request.POST.get('fullcaps','off')
+    newlineremover=request.POST.get('newlineremover','off')
+    extraspaceremover=request.POST.get('extraspaceremover','off')
 
-    djtext=request.GET.get('text','default')
+    
     #print(djtext)
 
     if removepunc == "on":

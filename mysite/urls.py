@@ -22,6 +22,4 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
     path('removepunc/', views.removepunc, name='removepunc'),
-    path('blog/',views.blog,name='blog'),
-
 ]

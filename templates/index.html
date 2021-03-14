@@ -40,7 +40,7 @@
     <div class="alert alert-success alert-dismissible fade show" role="alert">
   <strong>Welcome!!</strong> You should check in on some of those fields below.
 </div>
-    <form action="/removepunc" method="get">
+    <form action='/removepunc/' method='post'>{% csrf_token %}
     <div class ="container">
 
   <label for="exampleFormControlTextarea1" class="form-label">Enter Your text here</label>
